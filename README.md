@@ -54,21 +54,12 @@ A data-quality workflow should model **typed changes**, preserve appointment qua
 - This project is not affiliated with or endorsed by Leadership Connect, HHS, FDA or USPSTF.
 
 **Created by Felipe Mattos.**
-## Visual direction and interaction
+## Presentation and interpretation
 
-The redesign combines Leadership Connect’s Rubik / Mulish typography and blue (`#00468b`) / cyan (`#00b4df`) brand colors with Nick Ho Motorsports-inspired full-screen composition, vertical grid lines, overlay navigation and chapter rhythm. It uses semantic HTML, responsive CSS and vanilla JavaScript without a package-install or build dependency. The existing research pipeline remains Python.
+The portfolio uses an independent slate-and-sage identity, an original CSS hero and an original SVG verification-flow diagram. No Leadership Connect logos, screenshots or image assets are included. Rubik and Mulish are served by Google Fonts, with system fallbacks. The chapter navigation retains inspiration from Nick Ho Motorsports.
 
-- A full-screen introduction, interactive FDA organizational context, four research-method tabs, priority/FIFO queue comparison and directly linked primary sources.
-- Native modal navigation with focus containment and Escape support; method tabs support arrow keys, Home and End; selected people expose pressed state.
-- Reduced-motion support, keyboard focus indicators, skip navigation and a printable layout.
-- `python src/build.py` refreshes the embedded research payload and synchronizes the root page with `site/index.html`.
-- Google Fonts serves Rubik and Mulish; system fallbacks remain readable if the font service is unavailable.
+A 30-second executive brief distinguishes the four-appointment FDA main case (12 verification tasks) from the separate eight-member USPSTF event-pattern check (not part of that queue). The proposed operational decision follows the queue: classify the change before choosing checks, preserve sources and leave unsupported dates unknown.
 
-### Visual references and asset credits
+The queue compares ingestion order with an explicitly editorial heuristic. No review-time reduction, error reduction or validated ranking accuracy is established. The proposal requires controlled operational evaluation.
 
-- Brand / typography reference: https://leadershipconnect.io/
-- Composition / navigation reference: https://nickho-motorsports.nl/
-- `site/assets/brand-wave.png`: https://leadershipconnect.io/wp-content/uploads/source_Hero-dark-scaled-2.png
-- `site/assets/stakeholder-map.webp`: public product illustration from https://leadershipconnect.io/wp-content/uploads/Graphic-chart-2048x626.png
-
-The product illustration is explicitly captioned separately from the research case; it is not evidence for FDA reporting relationships. Brand assets remain the property of their respective owners. No affiliation or endorsement is implied.
+The static site uses semantic HTML, CSS and vanilla JavaScript; analysis remains Python. The native modal menu, keyboard-accessible method tabs, reduced-motion support and print layout are retained. `python src/build.py` synchronizes the root and `site/` entry points after refreshing the embedded dataset.

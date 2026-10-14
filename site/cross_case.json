@@ -1,0 +1,14 @@
+{
+  "source_documents": 5,
+  "fda": {
+    "acting_to_director": 3,
+    "new_organizational_role": 1
+  },
+  "task_force": {
+    "new_members_named": 8,
+    "named_chair": 1
+  },
+  "appointments_total": 12,
+  "effective_dates_verified": 0,
+  "external_validation_scope": "Schema and event-pattern generalization; not a statistical test of precision, recall, or workload savings."
+}

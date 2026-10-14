@@ -1,0 +1,447 @@
+{
+  "case": {
+    "case_id": "fda-sept-2026",
+    "as_of": "2026-10-14",
+    "agency": "U.S. Food and Drug Administration",
+    "sources": [
+      {
+        "id": "FDA-AUG30",
+        "kind": "official_historical_calendar",
+        "label": "FDA public calendar, Aug 30–Sep 5 (prior acting titles)",
+        "date": "2026-09-05",
+        "url": "https://www.fda.gov/news-events/public-calendar-meetings-fda-officials/public-calendar-august-30-september-5-2026",
+        "note": "Archived week-specific record, lists Davis, Mikhail, Koplow as acting directors."
+      },
+      {
+        "id": "HHS-SEP08",
+        "kind": "official_announcement",
+        "label": "HHS leadership selections",
+        "date": "2026-09-08",
+        "url": "https://www.hhs.gov/press-room/hhs-announces-key-fda-leadership-selections.html"
+      },
+      {
+        "id": "FDA-SEP20",
+        "kind": "official_historical_calendar",
+        "label": "FDA public calendar, Sep 20–26 (subsequent titles)",
+        "date": "2026-09-26",
+        "url": "https://www.fda.gov/news-events/public-calendar-meetings-fda-officials/public-calendar-september-20-26-2026",
+        "note": "Week-specific record, lists directors without acting designation."
+      },
+      {
+        "id": "FDA-OCT13",
+        "kind": "official_current_chart",
+        "label": "FDA organization chart (page displays Oct 13, 2026)",
+        "date": "2026-10-13",
+        "url": "https://www.fda.gov/about-fda/fda-organization-charts/fda-overview-organization-chart-text-version",
+        "note": "LIVING WEBPAGE: the chart URL updates; page date must be checked again if revisited."
+      }
+    ],
+    "reporting_manager": {
+      "id": "FDA-COMMISSIONER",
+      "name": "Kyle Diamantas",
+      "role": "Acting Commissioner of Food and Drugs",
+      "evidence": [
+        "FDA-AUG30"
+      ],
+      "note": "Official FDA calendar identifies the Acting Commissioner; edges in the visualization are illustrative rather than independently validated direct reporting lines."
+    },
+    "changes": [
+      {
+        "id": "CHG-01",
+        "person": "Jared Seehafer",
+        "role": "Deputy Commissioner for Technology and Artificial Intelligence",
+        "unit": "Office of the Commissioner",
+        "type": "new_role",
+        "evidence": [
+          "HHS-SEP08",
+          "FDA-OCT13"
+        ],
+        "relationships": [
+          "organizational placement shown in FDA overview; direct reporting edge not independently verified"
+        ],
+        "risk_tags": [
+          "new_org_role",
+          "cross_agency_scope"
+        ],
+        "customer_relevance": 3,
+        "prior_status": "No prior occupant identified; HHS describes the position as newly created.",
+        "transition_status": "new_position_confirmed",
+        "transition_evidence": [
+          "HHS-SEP08"
+        ],
+        "unresolved": "Precise effective/start date and predecessor equivalent, if any, remain unverified."
+      },
+      {
+        "id": "CHG-02",
+        "person": "Michael Davis",
+        "role": "Director, Center for Drug Evaluation and Research",
+        "unit": "Center for Drug Evaluation and Research (CDER)",
+        "type": "leadership_selection",
+        "evidence": [
+          "HHS-SEP08",
+          "FDA-OCT13"
+        ],
+        "relationships": [
+          "organizational placement shown in FDA overview; direct reporting edge not independently verified"
+        ],
+        "risk_tags": [
+          "center_leadership"
+        ],
+        "customer_relevance": 2,
+        "prior_status": "Acting Director",
+        "transition_status": "acting_to_director_confirmed",
+        "transition_evidence": [
+          "FDA-AUG30",
+          "HHS-SEP08",
+          "FDA-SEP20"
+        ],
+        "unresolved": "Exact effective day was not independently verified; announcement and later title establish a transition window, not a start date."
+      },
+      {
+        "id": "CHG-03",
+        "person": "Karim Mikhail",
+        "role": "Director, Center for Biologics Evaluation and Research",
+        "unit": "Center for Biologics Evaluation and Research (CBER)",
+        "type": "leadership_selection",
+        "evidence": [
+          "HHS-SEP08",
+          "FDA-OCT13"
+        ],
+        "relationships": [
+          "organizational placement shown in FDA overview; direct reporting edge not independently verified"
+        ],
+        "risk_tags": [
+          "center_leadership"
+        ],
+        "customer_relevance": 2,
+        "prior_status": "Acting Director",
+        "transition_status": "acting_to_director_confirmed",
+        "transition_evidence": [
+          "FDA-AUG30",
+          "HHS-SEP08",
+          "FDA-SEP20"
+        ],
+        "unresolved": "Exact effective day was not independently verified; announcement and later title establish a transition window, not a start date."
+      },
+      {
+        "id": "CHG-04",
+        "person": "Bret Koplow",
+        "role": "Director, Center for Tobacco Products",
+        "unit": "Center for Tobacco Products (CTP)",
+        "type": "leadership_selection",
+        "evidence": [
+          "HHS-SEP08",
+          "FDA-OCT13"
+        ],
+        "relationships": [
+          "organizational placement shown in FDA overview; direct reporting edge not independently verified"
+        ],
+        "risk_tags": [
+          "center_leadership"
+        ],
+        "customer_relevance": 2,
+        "prior_status": "Acting Director",
+        "transition_status": "acting_to_director_confirmed",
+        "transition_evidence": [
+          "FDA-AUG30",
+          "HHS-SEP08",
+          "FDA-SEP20"
+        ],
+        "unresolved": "Exact effective day was not independently verified; announcement and later title establish a transition window, not a start date."
+      }
+    ],
+    "research_finding": "Three Acting Director → Director title changes supported by dated FDA calendars and the HHS announcement; one newly created Deputy Commissioner role. Exact personnel-effective dates not established.",
+    "source_caveat": "The organizational chart is a living page. The original v1 attributed a September 16 chart snapshot to a URL that now displays October 13. This version avoids treating that URL as a fixed archived snapshot."
+  },
+  "tasks": [
+    {
+      "id": "CHG-01-PROFILE",
+      "event_id": "CHG-01",
+      "kind": "profile",
+      "title": "Confirm person-to-role association",
+      "person": "Jared Seehafer",
+      "status": "confirmed",
+      "why": "Both official sources name the appointee.",
+      "research_note": "",
+      "score": 8,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 4,
+        "impact_assumption": 3,
+        "evidence_gap": 0,
+        "new_role_flag": 1
+      },
+      "rank_priority": 1,
+      "rank_fifo": 1
+    },
+    {
+      "id": "CHG-01-HIERARCHY",
+      "event_id": "CHG-01",
+      "kind": "hierarchy",
+      "title": "Confirm organizational placement",
+      "person": "Jared Seehafer",
+      "status": "confirmed",
+      "why": "Official FDA chart includes the role or center under the Commissioner.",
+      "research_note": "",
+      "score": 7,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 3,
+        "impact_assumption": 3,
+        "evidence_gap": 0,
+        "new_role_flag": 1
+      },
+      "rank_priority": 3,
+      "rank_fifo": 2
+    },
+    {
+      "id": "CHG-01-TRANSITION",
+      "event_id": "CHG-01",
+      "kind": "transition",
+      "title": "Verify prior appointment status and effective-date window",
+      "person": "Jared Seehafer",
+      "status": "needs_research",
+      "why": "Precise effective/start date and predecessor equivalent, if any, remain unverified.",
+      "research_note": "No prior occupant identified; HHS describes the position as newly created.",
+      "score": 8,
+      "source_ids": [
+        "HHS-SEP08"
+      ],
+      "score_factors": {
+        "task_weight": 2,
+        "impact_assumption": 3,
+        "evidence_gap": 2,
+        "new_role_flag": 1
+      },
+      "rank_priority": 2,
+      "rank_fifo": 3
+    },
+    {
+      "id": "CHG-02-PROFILE",
+      "event_id": "CHG-02",
+      "kind": "profile",
+      "title": "Confirm person-to-role association",
+      "person": "Michael Davis",
+      "status": "confirmed",
+      "why": "Both official sources name the appointee.",
+      "research_note": "",
+      "score": 5,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 4,
+        "impact_assumption": 1,
+        "evidence_gap": 0,
+        "new_role_flag": 0
+      },
+      "rank_priority": 4,
+      "rank_fifo": 4
+    },
+    {
+      "id": "CHG-02-HIERARCHY",
+      "event_id": "CHG-02",
+      "kind": "hierarchy",
+      "title": "Confirm organizational placement",
+      "person": "Michael Davis",
+      "status": "confirmed",
+      "why": "Official FDA chart includes the role or center under the Commissioner.",
+      "research_note": "",
+      "score": 4,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 3,
+        "impact_assumption": 1,
+        "evidence_gap": 0,
+        "new_role_flag": 0
+      },
+      "rank_priority": 10,
+      "rank_fifo": 5
+    },
+    {
+      "id": "CHG-02-TRANSITION",
+      "event_id": "CHG-02",
+      "kind": "transition",
+      "title": "Verify prior appointment status and effective-date window",
+      "person": "Michael Davis",
+      "status": "partial",
+      "why": "Exact effective day was not independently verified; announcement and later title establish a transition window, not a start date.",
+      "research_note": "Acting Director",
+      "score": 5,
+      "source_ids": [
+        "FDA-AUG30",
+        "HHS-SEP08",
+        "FDA-SEP20"
+      ],
+      "score_factors": {
+        "task_weight": 2,
+        "impact_assumption": 1,
+        "evidence_gap": 2,
+        "new_role_flag": 0
+      },
+      "rank_priority": 5,
+      "rank_fifo": 6
+    },
+    {
+      "id": "CHG-03-PROFILE",
+      "event_id": "CHG-03",
+      "kind": "profile",
+      "title": "Confirm person-to-role association",
+      "person": "Karim Mikhail",
+      "status": "confirmed",
+      "why": "Both official sources name the appointee.",
+      "research_note": "",
+      "score": 5,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 4,
+        "impact_assumption": 1,
+        "evidence_gap": 0,
+        "new_role_flag": 0
+      },
+      "rank_priority": 6,
+      "rank_fifo": 7
+    },
+    {
+      "id": "CHG-03-HIERARCHY",
+      "event_id": "CHG-03",
+      "kind": "hierarchy",
+      "title": "Confirm organizational placement",
+      "person": "Karim Mikhail",
+      "status": "confirmed",
+      "why": "Official FDA chart includes the role or center under the Commissioner.",
+      "research_note": "",
+      "score": 4,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 3,
+        "impact_assumption": 1,
+        "evidence_gap": 0,
+        "new_role_flag": 0
+      },
+      "rank_priority": 11,
+      "rank_fifo": 8
+    },
+    {
+      "id": "CHG-03-TRANSITION",
+      "event_id": "CHG-03",
+      "kind": "transition",
+      "title": "Verify prior appointment status and effective-date window",
+      "person": "Karim Mikhail",
+      "status": "partial",
+      "why": "Exact effective day was not independently verified; announcement and later title establish a transition window, not a start date.",
+      "research_note": "Acting Director",
+      "score": 5,
+      "source_ids": [
+        "FDA-AUG30",
+        "HHS-SEP08",
+        "FDA-SEP20"
+      ],
+      "score_factors": {
+        "task_weight": 2,
+        "impact_assumption": 1,
+        "evidence_gap": 2,
+        "new_role_flag": 0
+      },
+      "rank_priority": 7,
+      "rank_fifo": 9
+    },
+    {
+      "id": "CHG-04-PROFILE",
+      "event_id": "CHG-04",
+      "kind": "profile",
+      "title": "Confirm person-to-role association",
+      "person": "Bret Koplow",
+      "status": "confirmed",
+      "why": "Both official sources name the appointee.",
+      "research_note": "",
+      "score": 5,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 4,
+        "impact_assumption": 1,
+        "evidence_gap": 0,
+        "new_role_flag": 0
+      },
+      "rank_priority": 8,
+      "rank_fifo": 10
+    },
+    {
+      "id": "CHG-04-HIERARCHY",
+      "event_id": "CHG-04",
+      "kind": "hierarchy",
+      "title": "Confirm organizational placement",
+      "person": "Bret Koplow",
+      "status": "confirmed",
+      "why": "Official FDA chart includes the role or center under the Commissioner.",
+      "research_note": "",
+      "score": 4,
+      "source_ids": [
+        "HHS-SEP08",
+        "FDA-OCT13"
+      ],
+      "score_factors": {
+        "task_weight": 3,
+        "impact_assumption": 1,
+        "evidence_gap": 0,
+        "new_role_flag": 0
+      },
+      "rank_priority": 12,
+      "rank_fifo": 11
+    },
+    {
+      "id": "CHG-04-TRANSITION",
+      "event_id": "CHG-04",
+      "kind": "transition",
+      "title": "Verify prior appointment status and effective-date window",
+      "person": "Bret Koplow",
+      "status": "partial",
+      "why": "Exact effective day was not independently verified; announcement and later title establish a transition window, not a start date.",
+      "research_note": "Acting Director",
+      "score": 5,
+      "source_ids": [
+        "FDA-AUG30",
+        "HHS-SEP08",
+        "FDA-SEP20"
+      ],
+      "score_factors": {
+        "task_weight": 2,
+        "impact_assumption": 1,
+        "evidence_gap": 2,
+        "new_role_flag": 0
+      },
+      "rank_priority": 9,
+      "rank_fifo": 12
+    }
+  ],
+  "summary": {
+    "official_sources": 4,
+    "announced_selections": 4,
+    "verification_tasks": 12,
+    "source_supported_checks": 8,
+    "open_research_tasks": 1,
+    "partial_checks": 3,
+    "documented_transition_patterns": 3
+  },
+  "disclaimer": "Public-source exercise. No access to Leadership Connect data, no inferred defects, no verified internal ROI.",
+  "method": "Scores are illustrative editorial priorities, not an empirically validated risk model."
+}

@@ -67,6 +67,8 @@ def main():
     updated = re.sub(r'<script type="application/json" id="embedded-case">.*?</script>', lambda m: '<script type="application/json" id="embedded-case">'+payload+'</script>', html, count=1, flags=re.S)
     assert updated != html or payload in html, 'Embedded dataset placeholder missing'
     page.write_text(updated,encoding='utf-8')
+    root_page = updated.replace('href="styles.css"', 'href="site/styles.css"').replace('src="app.js"', 'src="site/app.js"').replace('src="assets/', 'src="site/assets/')
+    (ROOT / 'index.html').write_text(root_page,encoding='utf-8')
     print(json.dumps(result['summary'],indent=2))
 
 if __name__=='__main__':main()

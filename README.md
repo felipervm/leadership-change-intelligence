@@ -5,7 +5,7 @@ Independent Data Operations research case study by Felipe Mattos.
 
 ## [Open the interactive FDA case](https://felipervm.github.io/leadership-change-intelligence/)
 
-> This URL will work **only after** the GitHub repository is created and GitHub Pages is enabled. It is not a live link yet.
+The repository includes a root entry point and a `site/` entry point for GitHub Pages.
 
 ## What the work investigates
 
@@ -25,7 +25,7 @@ The FDA case has **four dated primary sources**; the USPSTF case currently has *
 - `data/external_validation.json`: USPSTF event-pattern test with eight named appointees
 - `src/build.py`: 12 transparent FDA verification tasks and illustrative queue rankings
 - `src/cross_case.py`: validate source references and compare event families
-- `site/index.html`: self-contained interactive visualization of the FDA case
+- `site/index.html`, `site/styles.css`, `site/app.js`: interactive FDA case and editorial portfolio experience
 - `site/case.json`, `site/cross_case.json`: generated reproducible analysis
 - `docs/decision_brief.md`: source links, findings, caveats and operating proposal
 - `tests/`: automated integrity tests
@@ -54,3 +54,21 @@ A data-quality workflow should model **typed changes**, preserve appointment qua
 - This project is not affiliated with or endorsed by Leadership Connect, HHS, FDA or USPSTF.
 
 **Created by Felipe Mattos.**
+## Visual direction and interaction
+
+The redesign combines Leadership Connect’s Rubik / Mulish typography and blue (`#00468b`) / cyan (`#00b4df`) brand colors with Nick Ho Motorsports-inspired full-screen composition, vertical grid lines, overlay navigation and chapter rhythm. It uses semantic HTML, responsive CSS and vanilla JavaScript without a package-install or build dependency. The existing research pipeline remains Python.
+
+- A full-screen introduction, interactive FDA organizational context, four research-method tabs, priority/FIFO queue comparison and directly linked primary sources.
+- Native modal navigation with focus containment and Escape support; method tabs support arrow keys, Home and End; selected people expose pressed state.
+- Reduced-motion support, keyboard focus indicators, skip navigation and a printable layout.
+- `python src/build.py` refreshes the embedded research payload and synchronizes the root page with `site/index.html`.
+- Google Fonts serves Rubik and Mulish; system fallbacks remain readable if the font service is unavailable.
+
+### Visual references and asset credits
+
+- Brand / typography reference: https://leadershipconnect.io/
+- Composition / navigation reference: https://nickho-motorsports.nl/
+- `site/assets/brand-wave.png`: https://leadershipconnect.io/wp-content/uploads/source_Hero-dark-scaled-2.png
+- `site/assets/stakeholder-map.webp`: public product illustration from https://leadershipconnect.io/wp-content/uploads/Graphic-chart-2048x626.png
+
+The product illustration is explicitly captioned separately from the research case; it is not evidence for FDA reporting relationships. Brand assets remain the property of their respective owners. No affiliation or endorsement is implied.

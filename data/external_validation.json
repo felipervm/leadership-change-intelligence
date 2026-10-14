@@ -1,0 +1,88 @@
+{
+  "case_id": "uspstf-sept-2026",
+  "agency": "U.S. Preventive Services Task Force",
+  "event_type": "membership_addition",
+  "announced_on": "2026-09-17",
+  "source": {
+    "id": "HHS-SEP17",
+    "url": "https://www.hhs.gov/press-room/secretary-kennedy-announces-new-us-preventive-services-task-force-members.html",
+    "kind": "official_announcement",
+    "published_on": "2026-09-17"
+  },
+  "new_members": [
+    {
+      "person": "Seth J. Corey",
+      "member_role": "Chair",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    },
+    {
+      "person": "Patrick K. Hunter",
+      "member_role": "Member",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    },
+    {
+      "person": "Ronald P. Karlsberg",
+      "member_role": "Member",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    },
+    {
+      "person": "Venkatesh L. Murthy",
+      "member_role": "Member",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    },
+    {
+      "person": "Stephen T. Parente",
+      "member_role": "Member",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    },
+    {
+      "person": "Goldie Stands-Over-Bull",
+      "member_role": "Member",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    },
+    {
+      "person": "Louis J. Wilson",
+      "member_role": "Member",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    },
+    {
+      "person": "Dennis W. Wulfeck",
+      "member_role": "Member",
+      "evidence": [
+        "HHS-SEP17"
+      ],
+      "confirmed": "Named as new appointee in HHS release",
+      "unverified": "Exact formal service start date; predecessor or replacement relationship; existing profile status"
+    }
+  ],
+  "prior_membership_state": "unknown_from_this_source",
+  "note": "External event-pattern check only. This release announces eight members; it is not evidence of a profile gap, a prior resignation, or an effective appointment date."
+}

@@ -42,12 +42,12 @@ class PresentationBuildTests(unittest.TestCase):
 
     def test_root_entry_uses_site_assets_without_rewriting_external_links(self):
         html=self.run_build()
-        expected=html.replace('href="styles.css"','href="site/styles.css"').replace('src="app.js"','src="site/app.js"').replace('src="assets/','src="site/assets/')
+        expected=html.replace('href="styles.css','href="site/styles.css').replace('src="app.js','src="site/app.js').replace('src="assets/','src="site/assets/')
         root=(self.root/'index.html').read_text(encoding='utf-8')
         self.assertEqual(root,expected)
         self.assertIn('https://www.linkedin.com/in/felipervm/',root)
-        self.assertIn('href="site/styles.css"',root)
-        self.assertIn('src="site/app.js"',root)
+        self.assertIn('href="site/styles.css?v=',root)
+        self.assertIn('src="site/app.js?v=',root)
 
     def test_repeat_build_is_idempotent_and_keeps_all_story_sections(self):
         first=self.run_build()

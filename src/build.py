@@ -71,7 +71,7 @@ def main():
     assert 'id="embedded-comparison"' in updated, 'Comparison dataset placeholder missing'
     updated = re.sub(r'<script type="application/json" id="embedded-comparison">.*?</script>', lambda m: '<script type="application/json" id="embedded-comparison">'+comparison_payload+'</script>', updated, count=1, flags=re.S)
     page.write_text(updated,encoding='utf-8')
-    root_page = updated.replace('href="styles.css"', 'href="site/styles.css"').replace('src="app.js"', 'src="site/app.js"').replace('src="assets/', 'src="site/assets/')
+    root_page = updated.replace('href="styles.css', 'href="site/styles.css').replace('src="app.js', 'src="site/app.js').replace('src="assets/', 'src="site/assets/')
     (ROOT / 'index.html').write_text(root_page,encoding='utf-8')
     print(json.dumps(result['summary'],indent=2))
 

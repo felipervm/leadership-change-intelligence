@@ -54,12 +54,20 @@ A data-quality workflow should model **typed changes**, preserve appointment qua
 - This project is not affiliated with or endorsed by Leadership Connect, HHS, FDA or USPSTF.
 
 **Created by Felipe Mattos.**
-## Presentation and interpretation
+## Interactive research story
 
-The portfolio uses an independent slate-and-sage identity, an original CSS hero and an original SVG verification-flow diagram. No Leadership Connect logos, screenshots or image assets are included. Rubik and Mulish are served by Google Fonts, with system fallbacks. The chapter navigation retains inspiration from Nick Ho Motorsports.
+The default reading path now has five moments: **Signal → Discovery → Decision → Evidence → Takeaway**. It leads with the three documented Acting Director → Director changes while treating the fourth FDA selection as a distinct newly created role.
 
-A 30-second executive brief distinguishes the four-appointment FDA main case (12 verification tasks) from the separate eight-member USPSTF event-pattern check (not part of that queue). The proposed operational decision follows the queue: classify the change before choosing checks, preserve sources and leave unsupported dates unknown.
+- **Before / After:** the same three identity rows stay in place while the appointment qualifier and corresponding official calendar citation change. Observation weeks are not presented as effective appointment dates.
+- **Decision explorer:** keyboard-accessible tabs switch between a status change, a newly created role and a separate USPSTF membership addition. Each state shows only its checks, a proposed review record, its evidence and unresolved fields.
+- **Evidence trail:** four FDA records and the separate USPSTF announcement have expandable source notes. The mutable organizational-chart caveat remains visible and is explained in its document record.
+- **Progressive disclosure:** the full 12-task FDA queue and its editorial ranking remain available under “Inspect the FDA verification exercise.” Neither ordering is a validated performance result. Full methodology and source caveats remain in `docs/decision_brief.md` and the JSON datasets.
+- **Original visuals:** the hero depicts verification dependencies, not organizational reporting lines; state-specific SVGs show the corresponding event pattern. Motion is decorative to the explanation, never required, and disabled under `prefers-reduced-motion`.
 
-The queue compares ingestion order with an explicitly editorial heuristic. No review-time reduction, error reduction or validated ranking accuracy is established. The proposal requires controlled operational evaluation.
+The site uses deep navy / charcoal / restrained cyan, Rubik and Mulish, semantic HTML, responsive CSS and vanilla JavaScript. No framework, package installation, analytics or external data API is required. Google Fonts is optional; readable system fallbacks are provided.
 
-The static site uses semantic HTML, CSS and vanilla JavaScript; analysis remains Python. The native modal menu, keyboard-accessible method tabs, reduced-motion support and print layout are retained. `python src/build.py` synchronizes the root and `site/` entry points after refreshing the embedded dataset.
+`python src/build.py` refreshes **both** embedded research datasets from source and synchronizes the root GitHub Pages entry point with `site/index.html`, rewriting only local asset paths. `python src/cross_case.py` retains the separate comparative analysis. Both root and `site/` work on a static host.
+
+## Validation
+
+Run `python -m unittest discover -s tests -v` and `node --check site/app.js`. Publishing tests cover source-payload synchronization, safe JSON embedding, idempotent regeneration and root asset paths in addition to the original research-integrity checks. Manual browser validation covers observation toggles, three decision states, source disclosures, the optional queue, keyboard controls, navigation and responsive layouts.

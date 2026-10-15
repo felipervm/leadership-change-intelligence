@@ -71,3 +71,5 @@ The site uses deep navy / charcoal / restrained cyan, Rubik and Mulish, semantic
 ## Validation
 
 Run `python -m unittest discover -s tests -v` and `node --check site/app.js`. Publishing tests cover source-payload synchronization, safe JSON embedding, idempotent regeneration and root asset paths in addition to the original research-integrity checks. Manual browser validation covers observation toggles, three decision states, source disclosures, the optional queue, keyboard controls, navigation and responsive layouts.
+
+Static CSS and JavaScript URLs include release query tags to avoid mixed cached releases on GitHub Pages. Preserve those tags when synchronizing the root entry point; bump the relevant tag when an asset changes.
